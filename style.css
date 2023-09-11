@@ -344,7 +344,7 @@ h1{
 /*------------ Professional Experience ------------------*/
 #professional-experience{
     padding: 50px 0;
-    background-image: url(images/pink-purple.png);
+    background-image: url(images/pink-purple2.png);
 }
 
 .experience-sub-title{
@@ -361,7 +361,7 @@ h1{
     margin-top: 50px;
 }
 .experience-list div{
-    background: #262626;
+    background:  rgba(255, 255, 255, 0.5); 
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -374,13 +374,13 @@ h1{
 }
 .experience-list div h2{
     font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
+    font-family: 'TripSansMedium';
 }
 .experience-list div h3{
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 15px;
+    text-align: left;
 }
 .experience-list div a{
     color: #fff;
@@ -390,6 +390,14 @@ h1{
     display: inline-block;
 }
 .experience-list div:hover{
-    background-color: #ff004f;
+    background-color: rgba(255, 255, 255, 1); 
     transform: translateY(-10px);
+    color: #2B1178;
+}
+.experience-list div a:hover{
+    color: #3D1269;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: inline-block;
 }
