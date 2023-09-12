@@ -102,7 +102,6 @@ nav ul li a:hover::after{
     text-align: center; /* Center the text horizontally within the box */
     font-family: 'TripSansMedium';
 }
-
 .title-box h2{
     font-size: 35px;
     font-family: 'TripSans';
@@ -114,8 +113,6 @@ nav ul li a:hover::after{
     width: 15%;
 
 }
-
-
 h3{
     text-align: center;
     padding-top: 3%;
@@ -157,18 +154,11 @@ h3{
     display: block; /* Make sure it behaves as a block-level element for margin auto to work */
     /* Add other CSS styles as needed */
 }
-
-
-
-  
 .image-container img:hover {
     transform: translate(0px, -10px); 
     transition: transform 0.3s ease; 
     opacity: 0.7; 
 }
-
-
-
 nav{
     display: flex;
     align-items: center;
@@ -224,11 +214,16 @@ nav ul li a:hover::after{
 /* ------------ about --------------- */
 
 #about{
-    padding: 80px 0;
+    padding: 50px 0;
     background-color: #EEF0EB;
     font-size: 18px;
 }
+.about-sub-title{
+    font-size: 60px;
+    color: #3D1269;
+    font-family: 'TripSansMedium';
 
+}
 .row{
     display: flex;
     justify-content: space-between;
@@ -239,32 +234,28 @@ nav ul li a:hover::after{
     margin-top: 5%;
     flex-basis: 35%;
 }
-
-h1{
-    margin-top: 0%;
-    margin-left: 5%;
+.about-col-1.sub-title{
+    margin-top: 40%;
+    flex-basis: 35%;
 }
+
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
 }
 .about-col-2{
     flex-basis: 60%;
+    margin-top: -5%;
 }
-.sub-title{
-    font-size: 60px;
-    font-weight: 600;
-    color: #2B1178;
-    font-family: 'TripSansMedium';
-}
+
 .tab-titles{
     display: flex;
     margin: 20px 0px 40px;
 }
 .tab-links{
     margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 35px;
+    font-family: 'TripSansMedium';
     cursor: pointer;
     position: relative;
 }
@@ -301,10 +292,18 @@ h1{
 /* ---------- projects ----------*/
 
 #projects{
-    padding: 30px 0;   
+    padding: 30px 0; 
+    background-color: white;  
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #2B1178;
+    font-family: 'TripSansMedium';
 }
 #projects h1{
-    text-align: right;
+    margin-top: 0%;
+    margin-left: 0%;
 }
 .project-list{
     display: grid;
@@ -313,7 +312,7 @@ h1{
     margin-top: 50px;
 }
 .project-list div{
-    background: #262626;
+    background: rgba(61, 18, 105, 0.8);
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -327,8 +326,15 @@ h1{
 .project-list div h2{
     font-size: 30px;
     font-weight: 500;
-    margin-bottom: 15px;
+    font-family: 'TripSansMedium';
 }
+.project-list div h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
 .project-list div a{
     color: #fff;
     text-decoration: none;
@@ -337,8 +343,19 @@ h1{
     display: inline-block;
 }
 .project-list div:hover{
-    background-color: #ff004f;
+    background-color: rgb(61, 18, 105);
     transform: translateY(-10px)
+}
+.project {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.project img{
+    margin-top: 5%;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
 }
 
 /*------------ Professional Experience ------------------*/
@@ -401,3 +418,4 @@ h1{
     margin-bottom: 20px;
     display: inline-block;
 }
+

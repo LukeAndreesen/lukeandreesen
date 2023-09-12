@@ -33,41 +33,44 @@
 
 <!--------- about ----------->
 <div id="about">
-    <h1 class = "sub-title">About Me</h1> 
     <div class="container">
+        <h1 class="about-sub-title">About Me</h1>
         <div class="row">
             <div class="about-col-1">
                 <img src="images/luke3.jpeg" id="luke">
             </div>
             <div class="about-col-2">
-                <p1>Hi! My name is Luke Andreesen, and I'm a rising 3rd year 
-                    student at the University of Chicago. I'm pursuing a double 
-                    major in Computer Science (B.S.) and Economics (B.A.), and 
-                    am fascinated by the intersection of the two fields. I've enjoyed
-                    a variety of experiences that allow me to puruse these passions,
-                    ranging from investment analyst roles to software engineering roles.
-                    Currenty, I find myself in the middle of this spectrum as a data science
-                    intern at a private equity firm, where I build technology to place
-                    deal-sourcing data in the hands of analysts.
-                    <br><br>
-                    I'm extremely passionate about emerging technology, particularly 
-                    quantum computing, which I researched last summmer at 
-                    <a href="documents/Luke-Andreesen-Resume">QuMatrix,</a> where I utilized
-                    technology such as IBM Qiskit to develop quantum algorithms.
-                    <br><br>
-                    Outside of school and work, I enjoy automating things around my 
-                    house. Most recently, I built a cloud-based automated plant 
-                    watering system, teaching myself the fundamentals of circuitry,
-                    electrical engineering, and robotics along the way. 
-
-                    I also enjoy rock climbing (pictured to the left). I'm an 
-                    active member of the UChicago climbing team, and love to 
-                    compete in competitions throughout the midwest.
-
                 <div class="tab-titles">
+                    <p class="tab-links" onclick="opentab('bio')">Bio</p>
                     <p class="tab-links active-link" onclick="opentab('education')">Education</p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
                     <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                </div>
+                <div class="tab-contents active-tab id" id="bio">
+                    <p1>Hi! My name is Luke Andreesen, and I'm a rising 3rd year 
+                        student at the University of Chicago. I'm pursuing a double 
+                        major in Computer Science (B.S.) and Economics (B.A.), and 
+                        am fascinated by the intersection of the two fields. I've enjoyed
+                        a variety of experiences that allow me to puruse these passions,
+                        ranging from investment analyst roles to software engineering roles.
+                        Currenty, I find myself in the middle of this spectrum as a data science
+                        intern at a private equity firm, where I build technology to place
+                        deal-sourcing data in the hands of analysts.
+                        <br><br>
+                        I'm extremely passionate about emerging technology, particularly 
+                        quantum computing, which I researched last summmer at 
+                        <a href="documents/Luke-Andreesen-Resume">QuMatrix,</a> where I utilized
+                        technology such as IBM Qiskit to develop quantum algorithms.
+                        <br><br>
+                        Outside of school and work, I enjoy automating things around my 
+                        house. Most recently, I built a cloud-based automated plant 
+                        watering system, teaching myself the fundamentals of circuitry,
+                        electrical engineering, and robotics along the way. 
+    
+                        I also enjoy rock climbing (pictured to the left). I'm an 
+                        active member of the UChicago climbing team, and love to 
+                        compete in competitions throughout the midwest.
+                    </p1>
                 </div>
                 <div class="tab-contents active-tab id" id="education">
                     <ul>
@@ -86,9 +89,11 @@
                 </div>
                 <div class="tab-contents" id="skills">
                     <ul>
-                        <li><span>Software Development</span><br>C, C++, Python, Java</li>
-                        <li><span>Web Application Development</span><br>Ruby on Rails, Docker, HTML/CSS</li>
-                        <li><span>Data Science</span><br>Statistics, AI/ML</li>
+                        <li><span>Software & Application Development</span><br>Python, Java, C, C++, Ruby on Rails, Docker, Git version control</li>
+                        <li><span>Data Science and Machine Learning</span><br>R, Pandas & NumPY (Python), SQL, Amazon SageMaker & Lightsale, Excel</li>
+                        <li><span>Other Tech</span><br>Quantum Computing Software (Qiskit, Qirq), AWS Cloud Services (EC2, Athena, S3)</li>
+                        <li><span>Finance</span><br>Bloomberg Terminal (BMC Certification), Investment Research, Valuation & Modeling</li>
+
                     </ul>
                 </div>
             </div>
@@ -136,32 +141,37 @@
     <div class="container">
         <h1 class="sub-title">Projects</h1>
         <div class="project-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Project 1</h2>
-                <p>blah blah blah blah blah blah blah blah blahlah 
-                    blah blah blah blah blah blah blah blah lah blah blah 
-                    lah blah blah blah blah blah blah blah blahblah blah blah 
-                    blah blah blah</p>
-                <a href="#">Learn More</a>
+            <div class="project">
+                <h2>IoT Plant Watering System</h2>
+                <h3>C++, Microcontrollers, IoT, Electrical Engineering</h3>
+                <p>A software and hardware framework for a cloud-based, 
+                    IoT-enabled plant watering system based on
+                    Arduino microcontroller, AC and DC pumps and sensors, controlled
+                    via WiFi.
+                </p>
+                <img src="images/planter.JPG">
+                <a href="#">View Project</a>
             </div>
-            <div>
+            <div class="project">
                 <i class="fa-solid fa-database"></i>
-                <h2>Project 2</h2>
-                <p>blah blah blah blah blah blah blah blah blahlah 
-                    blah blah blah blah blah blah blah blah lah blah blah 
-                    lah blah blah blah blah blah blah blah blahblah blah blah 
-                    blah blah blah</p>
-                <a href="#">Learn More</a>
+                <h2>Portfolio Site</h2>
+                <h3>HTML, CSS, JavaScript</h3>
+                <p>This site was custom-built with HTML, CSS, and JavaScript.
+                    Find the source code below if you're interested in 
+                    building a simple portfolio site of your own!
+                </p>
+                <img src="images/portfolio-pic.png">
+                <a href="#">View Project</a>
             </div>
-            <div>
+            <div class="project">
                 <i class="fa-solid fa-computer"></i>
-                <h2>Project 3</h2>
+                <h2>Cancer Incidence Rates vs. Wealth (R)</h2>
                 <p>blah blah blah blah blah blah blah blah blahlah 
                     blah blah blah blah blah blah blah blah lah blah blah 
                     lah blah blah blah blah blah blah blah blahblah blah blah 
                     blah blah blah</p>
-                <a href="#">Learn More</a>
+                <img src="images/combined.png">
+                <a href="#">View Project</a>
             </div>
         </div>
     </div>
