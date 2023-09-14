@@ -81,6 +81,20 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #ff004f;
 }
+.basic-button {
+    padding: 10px 20px;
+    background-color: rgb(61, 18, 105); /* Button background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.basic-button:hover {
+    background-color: #2B1178; /* Change the background color on hover */
+}
 
 #header2{
     width: 100%;
@@ -97,13 +111,13 @@ nav ul li a:hover::after{
     display: inline-block; /* Adjust width to fit the content */
     height: 10px; /* Set the height of the box */
     padding: 25px; /* Add some padding inside the box */
-    font-size: 50px;
+    font-size: 4.5vw;
   /*  border: 3px solid #ffffff; /* Add a border to the box */
     text-align: center; /* Center the text horizontally within the box */
     font-family: 'TripSansMedium';
 }
 .title-box h2{
-    font-size: 35px;
+    font-size: 2.25vw;
     font-family: 'TripSans';
 }
 
@@ -116,7 +130,7 @@ nav ul li a:hover::after{
 h3{
     text-align: center;
     padding-top: 3%;
-    font-size: 20px;
+    font-size: 1.3vw;
     font-family: 'TripSans';
 }
 
