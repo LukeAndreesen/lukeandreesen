@@ -28,7 +28,7 @@ body{
 
 }
 .container{
-    padding: 10px 10%;
+    padding: 1% 10%;
 }
 
 nav{
@@ -141,10 +141,10 @@ h3{
 .image-container {
     display: flex; /* Use flexbox */
     justify-content: center; /* Distribute images evenly with space in-between */
-    width: 20%;
+    width: 20vw;
     align-items: center;
-    margin-left: 40%;
-    margin-top: 30px;
+    margin: 2vw 31vw;
+
     
 }
 
@@ -152,21 +152,19 @@ h3{
    /* width: 25%; /* Adjust the width to fit four images in a row */
  /*   max-width: 100%; /* Ensure images don't exceed their natural width */
    /* height: auto; /* Maintain the aspect ratio */
-    width: 85px;
-    height: 85px;
+    width: 6vw;
+    height: 6vw;
     margin-right: 30px;
     transform: translate(0px, 0px);
     transition: transform 0.3s ease; 
 }
 
 #down-arrow {
-    /* Your CSS properties here */
-    width: 50px; /* Example: Set the width */
-    height: 50px; /* Example: Set the height */
-    margin: 0 auto; /* Center horizontally by setting left and right margins to auto */
+    width: 3vw; 
+    height: 3vw;
+    margin: 0 auto; 
     margin-top: 100px;
-    display: block; /* Make sure it behaves as a block-level element for margin auto to work */
-    /* Add other CSS styles as needed */
+    display: block; 
 }
 .image-container img:hover {
     transform: translate(0px, -10px); 
