@@ -22,12 +22,12 @@
         </div>
         <h3>Find my Resume, LinkedIn, GitHub, and Email below!</h3>
         <div class="image-container">
-            <a href="documents/Luke-Andreesen-Resume.pdf" target="blank"><img src="images/resume.png" id="resume" alt="Resume"></a>
+            <a href="documents/Luke-Andreesen-Resume.pdf" ><img src="images/resume.png" id="resume" alt="Resume"></a>
             <a href="https://www.linkedin.com/in/luke-andreesen/" target = "_blank"><img src="images/linked-in.png" id="linked-in" alt="LinkedIn"></a>
             <a href="https://github.com/LukeAndreesen" target = "__blank"><img src="images/git-hub.png" id="git-hub"></a>
             <a href="mailto:landreesen@uchicago.edu" target="___blank"><img src="images/mail.png" id="mail" alt="Email"></a>
         </div>
-        <img src="images/down-arrow.png" id="down-arrow">
+        <a href="#about"><img src="images/down-arrow.png" id="down-arrow" alt="DownArrow"></a>
     </div>
 </div>
 
@@ -151,7 +151,7 @@
                     via WiFi.
                 </p>
                 <img src="images/planter.JPG">
-                <a href="https://github.com/LukeAndreesen/Smart-Planter">View Project</a>
+                <a href="https://github.com/LukeAndreesen/Smart-Planter " target = "__blank">View Project</a>
             </div>
             <div class="project">
                 <h2>Portfolio Site</h2>
@@ -161,7 +161,7 @@
                     building a simple portfolio site of your own!
                 </p>
                 <img src="images/portfolio-pic.png">
-                <a href="https://github.com/LukeAndreesen/lukeandreesen.github.io">View Project</a>
+                <a href="https://github.com/LukeAndreesen/lukeandreesen.github.io" target = "__blank">View Project</a>
             </div>
             <div class="project">
                 <h2>Cancer Incidence Rates vs. Wealth Research Study</h2>
@@ -176,7 +176,7 @@
                     along with all code and data, can be found below.
                 </p>
                 <img src="images/combined.png">
-                <a href="https://github.com/LukeAndreesen/CancerWealthAnalysis">View Project</a>
+                <a href="https://github.com/LukeAndreesen/CancerWealthAnalysis" target = "__blank">View Project</a>
             </div>
         </div>
     </div>
@@ -202,6 +202,24 @@
 
 
 </script>
-
+<script>
+    // Smooth scrolling with JavaScript
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+  
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+  
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+  
 </body>
 </html>

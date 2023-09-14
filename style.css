@@ -7,7 +7,11 @@
     font-family: 'TripSans'; 
     src: url(fonts/Trip-Sans-Font/trip-sans.otf) 
 }
-
+/* Add smooth scrolling behavior to anchor links */
+html {
+    scroll-behavior: smooth;
+}
+  
 *{
     margin: 0;
     padding: 0;
@@ -97,7 +101,7 @@ nav ul li a:hover::after{
 }
 
 #header2{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: url(images/purple-pink.png);
     background-size: cover;
@@ -160,8 +164,8 @@ h3{
 }
 
 #down-arrow {
-    width: 3vw; 
-    height: 3vw;
+    width: 3.5vw; 
+    height: 3.5vw;
     margin: 0 auto; 
     margin-top: 100px;
     display: block; 
@@ -226,12 +230,12 @@ nav ul li a:hover::after{
 /* ------------ about --------------- */
 
 #about{
-    padding: 50px 0;
+    padding: 5vw 0;
     background-color: #EEF0EB;
     font-size: 18px;
 }
 .about-sub-title{
-    font-size: 60px;
+    font-size: 4rem;
     color: #3D1269;
     font-family: 'TripSansMedium';
 
@@ -253,7 +257,7 @@ nav ul li a:hover::after{
 
 .about-col-1 img{
     width: 100%;
-    border-radius: 15px;
+    border-radius: 5%;
 }
 .about-col-2{
     flex-basis: 60%;
@@ -262,10 +266,10 @@ nav ul li a:hover::after{
 
 .tab-titles{
     display: flex;
-    margin: 20px 0px 40px;
+    margin: 3.5% 0px 7%;
 }
 .tab-links{
-    margin-right: 50px;
+    margin-right: 7.5%;
     font-size: 35px;
     font-family: 'TripSansMedium';
     cursor: pointer;
