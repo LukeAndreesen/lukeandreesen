@@ -304,6 +304,9 @@ nav ul li a:hover::after{
     font-family: 'TripSansMedium';
     font-size: 20px;
 }
+#about a{
+    color: #3D1269
+}
 
 /* ---------- projects ----------*/
 
