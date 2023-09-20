@@ -88,7 +88,7 @@ nav ul li a:hover::after{
 .basic-button {
     padding: 10px 20px;
     background-color: rgb(61, 18, 105); /* Button background color */
-    color: #fff; /* Text color */
+    color: #fff !important; /* Text color */
     border: none; /* Remove button border */
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Add a pointer cursor on hover */
