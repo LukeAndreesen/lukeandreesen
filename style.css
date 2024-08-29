@@ -1,441 +1,471 @@
 @font-face {
-    font-family: 'TripSansMedium'; 
-    src: url(fonts/Trip-Sans-Font/trip-sans-medium.otf) 
+    font-family: "TripSansMedium";
+    src: url(fonts/Trip-Sans-Font/trip-sans-medium.otf)
 }
 
 @font-face {
-    font-family: 'TripSans'; 
-    src: url(fonts/Trip-Sans-Font/trip-sans.otf) 
-}
-/* Add smooth scrolling behavior to anchor links */
-html {
-    scroll-behavior: smooth;
-}
-  
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'TripSans';
+    font-family:"TripSans";src:url(fonts/Trip-Sans-Font/trip-sans.otf)
 }
 
-body{
+html {
+    scroll-behavior: smooth
+}
+
+*,.title-box h2,h3 {
+    font-family: "TripSans"
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
     background: #080808;
     color: #fff
 }
-#header{
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/Rectangle1.png);
-    background-size: cover;
-    background-position: center;
 
-}
-.container{
-    padding: 1% 10%;
+.container {
+    padding: 1% 10%
 }
 
-nav{
-    display: flex;
+nav {
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-between
 }
 
-.logo{
-    width: 400px;
+.logo {
+    max-width: 400px
 }
 
-nav ul li{
+nav,nav ul {
+    display: flex;
+    flex-wrap: wrap
+}
+
+nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 18px;
+    margin: 10px 18px
 }
 
-nav ul li a{
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
-    position: relative;
-
+    position: relative
 }
 
-nav ul li a::after{
-    content: '';
+.tab-links::after,nav ul li a::after {
+    content: "";
     width: 0;
     height: 3px;
-    background: #ff004f;
     position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
+    transition: .5s
 }
 
-nav ul li a:hover::after{
-    width: 100%;
+nav ul li a::after {
+    background: #ff004f;
+    left: 0;
+    bottom: -6px
 }
-.header-text{
+
+.logo,.tab-links.active-link::after,nav ul li a:hover::after {
+    width: 100%
+}
+
+.header-text {
     margin-top: 10%;
-    font-size: 30px;
+    font-size: 30px
 }
-.header-text h1{
+
+.header-text h1 {
     font-size: 60px;
-    margin-top: 20px;
+    margin-top: 20px
 }
-.header-text h1 span{
-    color: #ff004f;
+
+.header-text h1 span {
+    color: #ff004f
 }
+
 .basic-button {
     padding: 10px 20px;
-    background-color: rgb(61, 18, 105); /* Button background color */
-    color: #fff !important; /* Text color */
-    border: none; /* Remove button border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Add a pointer cursor on hover */
+    background-color: #3d1269;
+    color: #fff!important;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
     font-size: 16px;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .basic-button:hover {
-    background-color: #2B1178; /* Change the background color on hover */
+    background-color: #2b1178
 }
 
-#header2{
+#header2 {
     width: 100vw;
     height: 100vh;
     background-image: url(images/purple-pink.png);
     background-size: cover;
-    background-position: center;
-}
-.container{
-    padding: 10px 10%;
+    background-position: center
 }
 
 .title-box {
-    display: inline-block; /* Adjust width to fit the content */
-    height: 10px; /* Set the height of the box */
-    padding: 25px; /* Add some padding inside the box */
+    display: inline-block;
+    padding: 25px;
     font-size: 4.5vw;
-  /*  border: 3px solid #ffffff; /* Add a border to the box */
-    text-align: center; /* Center the text horizontally within the box */
-    font-family: 'TripSansMedium';
+    font-family: "TripSansMedium"
 }
-.title-box h2{
-    font-size: 2.25vw;
-    font-family: 'TripSans';
+
+.title-box h2,h3 {
+    font-size: 2.25vw
 }
 
 .title-box .line {
-    margin: 10px auto; /* Optional: Add margin to control spacing */
-    margin-top: 50px;
-    width: 15%;
-
+    margin: 50px auto 10px;
+    width: 15%
 }
-h3{
-    text-align: center;
+
+.title-box,h3 {
+    text-align: center
+}
+
+h3 {
     padding-top: 3%;
-    font-size: 1.3vw;
-    font-family: 'TripSans';
-}
-
-.title-box p {
-    margin: 0; /* Remove default margin for the <p> element */
+    font-size: 1.3vw
 }
 
 .image-container {
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Distribute images evenly with space in-between */
-    width: 20vw;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 2vw 31vw;
-
-    
+    margin: 2vw auto;
+    width: 100%;
+    max-width: 600px
 }
 
 .image-container img {
-   /* width: 25%; /* Adjust the width to fit four images in a row */
- /*   max-width: 100%; /* Ensure images don't exceed their natural width */
-   /* height: auto; /* Maintain the aspect ratio */
     width: 6vw;
     height: 6vw;
-    margin-right: 30px;
-    transform: translate(0px, 0px);
-    transition: transform 0.3s ease; 
+    margin-right: 20px;
+    transition: transform .3s ease
+}
+
+.image-container img:hover {
+    transform: translate(0,-10px);
+    opacity: .7
 }
 
 #down-arrow {
-    width: 3.5vw; 
+    width: 3.5vw;
     height: 3.5vw;
-    margin: 0 auto; 
-    margin-top: 100px;
-    display: block; 
-}
-.image-container img:hover {
-    transform: translate(0px, -10px); 
-    transition: transform 0.3s ease; 
-    opacity: 0.7; 
-}
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    margin: 100px auto 0;
+    display: block
 }
 
-.logo{
-    width: 400px;
-}
-
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 18px;
-}
-
-nav ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    position: relative;
-
-}
-
-nav ul li a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #ff004f;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-
-nav ul li a:hover::after{
-    width: 100%;
-}
-.header2-text{
-    margin-top: 10%;
-    font-size: 30px;
-    text-align: center;
-}
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
-}
-.header-text h1 span{
-    color: #ff004f;
-}
-
-/* ------------ about --------------- */
-
-#about{
+#about {
     padding: 5vw 0;
-    background-color: #EEF0EB;
-    font-size: 18px;
+    background-color: #eef0eb;
+    font-size: 18px
 }
-.about-sub-title{
-    font-size: 4rem;
-    color: #3D1269;
-    font-family: 'TripSansMedium';
 
+.about-sub-title {
+    font-size: 4rem;
+    color: #3d1269;
+    font-family: "TripSansMedium"
 }
-.row{
+
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    color: #3D1269;
+    color: #3d1269
 }
-.about-col-1{
+
+.about-col-1 {
     margin-top: 5%;
-    flex-basis: 35%;
-}
-.about-col-1.sub-title{
-    margin-top: 40%;
-    flex-basis: 35%;
+    flex-basis: 35%
 }
 
-.about-col-1 img{
+.about-col-1 img {
     width: 100%;
-    border-radius: 5%;
-}
-.about-col-2{
-    flex-basis: 60%;
-    margin-top: -5%;
+    border-radius: 5%
 }
 
-.tab-titles{
-    display: flex;
-    margin: 3.5% 0px 7%;
+.about-col-2 {
+    flex-basis: 60%;
+    margin-top: -5%
 }
-.tab-links{
+
+.tab-titles {
+    display: flex;
+    margin: 3.5%0 7%
+}
+
+.tab-links {
     margin-right: 7.5%;
     font-size: 35px;
-    font-family: 'TripSansMedium';
+    font-family: "TripSansMedium";
     cursor: pointer;
-    position: relative;
+    position: relative
 }
-.tab-links::after{
-    content: '';
-    width: 0;
-    height: 3px;
+
+.tab-links::after {
     background: #571071;
-    position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -8px;
-    transition: 0.5s;
+    bottom: -8px
 }
-.tab-links.active-link::after{
-    width: 100%
+
+.tab-contents {
+    display: none
 }
-.tab-contents{
-    display: none;
+
+.project img,.tab-contents.active-tab {
+    display: block
 }
-.tab-contents.active-tab{
-    display: block;
-}
-.tab-contents ul li{
+
+.tab-contents ul li {
     list-style: none;
-    margin: 10px 0;
-}
-.tab-contents ul li span{
-    color: #2B1178;
-    font-family: 'TripSansMedium';
-    font-size: 20px;
-}
-#about a{
-    color: #3D1269
+    margin: 10px 0
 }
 
-/* ---------- projects ----------*/
-
-#projects{
-    padding: 30px 0; 
-    background-color: white;  
+.sub-title,.tab-contents ul li span {
+    color: #2b1178;
+    font-family: "TripSansMedium";
+    font-size: 20px
 }
-.sub-title{
+
+#about a {
+    color: #3d1269
+}
+
+#projects {
+    padding: 30px 0;
+    background-color: #fff
+}
+
+.sub-title {
     font-size: 60px;
-    font-weight: 600;
-    color: #2B1178;
-    font-family: 'TripSansMedium';
+    font-weight: 600
 }
-#projects h1{
-    margin-top: 0%;
-    margin-left: 0%;
-}
-.project-list{
+
+.project-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 50px
 }
-.project-list div{
-    background: rgba(61, 18, 105, 0.8);
+
+.experience-list div,.project-list div {
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
-    border-radius: 20px;
-    transition: background 0.5s, transform 0.5s; 
-}
-.project-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-.project-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    font-family: 'TripSansMedium';
-}
-.project-list div h3{
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 15px;
-    text-align: left;
+    border-radius: 20px
 }
 
-.project-list div a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    margin-top: 20px;
-    display: inline-block;
+.project-list div {
+    background: rgba(61,18,105,.8);
+    transition: background .5s,transform .5s
 }
-.project-list div:hover{
-    background-color: rgb(61, 18, 105);
+
+.experience-list div:hover,.project-list div:hover {
+    background-color: #3d1269;
     transform: translateY(-10px)
 }
-.project {
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-.project img{
+
+.project img {
     margin-top: 5%;
     width: 100%;
-    border-radius: 10px;
-    display: block;
+    border-radius: 10px
 }
 
-/*------------ Professional Experience ------------------*/
-#professional-experience{
+#professional-experience {
     padding: 50px 0;
-    background-image: url(images/pink-purple2.png);
+    background-image: url(images/pink-purple2.png)
 }
 
-.experience-sub-title{
+.experience-sub-title {
     font-size: 60px;
-    color: white;
-    margin-left: 65%;
-
+    color: #fff;
+    text-align: center;
+    margin: 0 auto
 }
-.experience-list{
+
+.experience-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-template-rows: auto;
+    grid-template-columns: repeat(2,1fr);
     grid-gap: 40px;
     margin-top: 50px;
-}
-.experience-list div{
-    background:  rgba(255, 255, 255, 0.5); 
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 20px;
-    transition: background 0.5s, transform 0.5s; 
-}
-.experience-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-.experience-list div h2{
-    font-size: 30px;
-    font-family: 'TripSansMedium';
-}
-.experience-list div h3{
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 15px;
-    text-align: left;
-}
-.experience-list div a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    margin-bottom: 20px;
-    display: inline-block;
-}
-.experience-list div:hover{
-    background-color: rgba(255, 255, 255, 1); 
-    transform: translateY(-10px);
-    color: #2B1178;
-}
-.experience-list div:hover a{
-    color: #3D1269;
-    text-decoration: none;
-    font-size: 18px;
-    margin-bottom: 20px;
-    display: inline-block;
-    font-family: "TripSansMedium";
+    align-items: start
 }
 
+.experience-list div {
+    background: rgba(255,255,255,.5);
+    transition: transform .5s,background .5s;
+    position: relative;
+    overflow: hidden
+}
+
+.experience-list div h3 {
+    text-align: left;
+    margin-top: 15px
+}
+
+.experience-list div a {
+    color: #2b1178;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color .3s,font-weight .3s
+}
+
+.experience-list div:hover {
+    background-color: #fff;
+    color: #2b1178
+}
+
+.experience-list div:hover a {
+    color: #2b1178;
+    font-weight: 700
+}
+
+.experience-list>:nth-child(odd):last-child {
+    grid-column: span 2;
+    justify-self: center
+}
+
+@media screen and (min-width:1024px) {
+    .experience-list {
+        grid-template-columns: repeat(2,1fr)
+    }
+
+    .experience-list div {
+        padding: 50px;
+        font-size: 15px
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:768px) {
+    .experience-list {
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px
+    }
+
+    .experience-list div {
+        padding: 30px;
+        font-size: 14px
+    }
+}
+
+@media screen and (max-width:768px) {
+    .experience-list {
+        grid-template-columns: 1fr
+    }
+
+    .experience-list div {
+        font-size: 13px
+    }
+
+    .header-text h1 {
+        font-size: 40px
+    }
+
+    .title-box {
+        font-size: 8vw
+    }
+
+    .title-box h2 {
+        font-size: 4.5vw
+    }
+
+    h3 {
+        font-size: 2vw
+    }
+
+    .image-container img {
+        width: 10vw;
+        height: 10vw
+    }
+
+    #down-arrow {
+        width: 8vw;
+        height: 8vw;
+        margin-top: 50px
+    }
+
+    .about-sub-title {
+        font-size: 2.5rem
+    }
+
+    .tab-links {
+        font-size: 25px
+    }
+
+    .experience-sub-title,.sub-title {
+        font-size: 40px
+    }
+
+    .project-list div {
+        padding: 20px;
+        font-size: 11px
+    }
+
+    .experience-list div {
+        padding: 20px
+    }
+}
+
+@media screen and (max-width:480px) {
+    .container {
+        padding: 2% 5%
+    }
+
+    .header-text h1 {
+        font-size: 30px
+    }
+
+    .title-box {
+        font-size: 10vw
+    }
+
+    .title-box h2 {
+        font-size: 6vw
+    }
+
+    h3 {
+        font-size: 3vw
+    }
+
+    .image-container img {
+        width: 15vw;
+        height: 15vw
+    }
+
+    #down-arrow {
+        width: 10vw;
+        height: 10vw
+    }
+
+    .about-sub-title {
+        font-size: 2rem
+    }
+
+    .tab-links {
+        font-size: 20px
+    }
+
+    .experience-sub-title,.sub-title {
+        font-size: 30px
+    }
+
+    .project-list div {
+        padding: 15px;
+        font-size: 10px
+    }
+
+    .experience-list div {
+        padding: 15px
+    }
+}
